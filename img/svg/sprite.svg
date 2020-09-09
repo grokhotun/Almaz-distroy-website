@@ -1,0 +1,38 @@
+<svg viewBox="0 0 20 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        :root>svg{display:none}:root>svg:target{display:block}
+    </style>
+    <svg fill="none" viewBox="0 0 20 37" id="arrow-left" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#aclip0)" opacity=".5">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.518 36.54c.28.284.653.442 1.042.442a1.46 1.46 0 001.041-.442c.137-.14.246-.307.32-.492a1.565 1.565 0 000-1.166 1.506 1.506 0 00-.32-.492L3.928 18.21 19.597 2.59a1.52 1.52 0 00.319-.49 1.554 1.554 0 000-1.16 1.497 1.497 0 00-.32-.49 1.444 1.444 0 00-1.04-.45c-.39 0-.765.162-1.041.45L0 18.21l17.518 18.33z" fill="#000"/>
+        </g>
+        <defs>
+            <clipPath id="aclip0">
+                <path transform="matrix(-1 0 0 1 20 0)" fill="#fff" d="M0 0h20v37H0z"/>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg fill="none" viewBox="0 0 20 37" id="arrow-right" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#bclip0)" opacity=".5">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.498 36.53c-.28.284-.653.442-1.041.442-.39 0-.763-.158-1.042-.442a1.504 1.504 0 01-.32-.492 1.564 1.564 0 010-1.166c.074-.185.183-.352.32-.492L16.089 18.2.419 2.58a1.496 1.496 0 01-.318-.49A1.555 1.555 0 01.1.93C.175.744.283.578.42.44c.277-.288.65-.45 1.04-.45s.765.162 1.042.45L20.016 18.2 2.498 36.53z" fill="#000"/>
+        </g>
+        <defs>
+            <clipPath id="bclip0">
+                <path fill="#fff" d="M0 0h20v37H0z"/>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg fill="none" viewBox="0 0 11 5" id="arrow-small" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#cclip0)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M.14.625a.34.34 0 01-.132-.26.34.34 0 01.131-.261.463.463 0 01.146-.08.543.543 0 01.347 0 .463.463 0 01.146.08l4.81 3.918L10.233.105a.461.461 0 01.146-.08.54.54 0 01.345 0 .462.462 0 01.146.08.34.34 0 01.133.26.337.337 0 01-.133.26l-5.28 4.38L.139.624z" fill="#005377"/>
+        </g>
+        <defs>
+            <clipPath id="cclip0">
+                <path transform="rotate(90 11 0)" fill="#fff" d="M11 0h5v11h-5z"/>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg fill="none" viewBox="0 0 8 80" id="long-arrow" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.646 79.354a.5.5 0 00.708 0l3.182-3.182a.5.5 0 10-.708-.707L4 78.293l-2.828-2.829a.5.5 0 10-.708.708l3.182 3.182zM3.5 0v79h1V0h-1z" fill="#fff"/>
+    </svg>
+</svg>
