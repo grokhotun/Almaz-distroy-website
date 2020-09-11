@@ -1469,12 +1469,21 @@ html {
   margin: 0 auto;
 }
 
+.examples-usage {
+  width: 100%;
+}
+
 .examples-usage__row {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.examples-usage__col {
+  width: 100%;
 }
 
 .examples-usage__col--big {
