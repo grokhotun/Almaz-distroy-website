@@ -1,0 +1,14 @@
+.title-section {
+    margin: 0px 0px 42px 0px;
+    @media (max-width:$maxwidth3){
+        margin: 0px 0px 20px 0px;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 800;
+        @include responsiveFont(42, 24, 1);
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #33444C;
+    }
+}

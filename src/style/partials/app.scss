@@ -1,0 +1,201 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+$breakpoints: (
+	"phone": 400px,
+	"phone-wide": 480px,
+	"phablet": 560px,
+	"tablet-small": 640px,
+	"tablet": 768px,
+	"tablet-wide": 1024px,
+	"desktop": 1248px,
+	"desktop-wide": 1440px,
+);
+
+body {
+	color: $black;
+	font-size: 16px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	position: relative;
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "small-blocks.scss";
+@import "ui.scss";
+@include scrollBarMovesPageNone;
+
+.s {
+	&-usage {
+		padding: 150px 0 100px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 60px 0;
+		}
+		@media (max-width:$maxwidth4){
+			padding: 20px 0;
+		}
+	}
+
+	&-feedback {
+		padding: 150px 0 100px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 60px 0;
+		}
+		@media (max-width:$maxwidth4){
+			padding: 20px 0;
+		}
+	}
+	&-sertificates {
+		position: relative;
+		padding: 150px 0 100px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 60px 0;
+		}
+		@media (max-width:$maxwidth4){
+			padding: 20px 0;
+		}
+		&__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 34.06%),
+					linear-gradient(180deg, rgba(255, 255, 255, 0) 33.77%, #ffffff 91.99%);
+			}
+		}
+	}
+
+	&-costs {
+		position: relative;
+		z-index: 3;
+		padding: 150px 0 100px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 60px 0;
+		}
+		@media (max-width:$maxwidth4){
+			padding: 20px 0;
+		}
+		&__bg {
+			position: absolute;
+			width: 50%;
+			height: 842px;
+			top: 80px;
+			right: 0;
+			background-size: cover;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 48.12%),
+					linear-gradient(360deg, #ffffff 5.05%, rgba(255, 255, 255, 0) 42.46%),
+					linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 37.83%);
+			}
+			@media (max-width: $maxwidth1) {
+				&:before {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: #fff;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	&-our-contacts {
+		position: relative;
+		padding: 150px 0 100px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 60px 0;
+		}
+		@media (max-width:$maxwidth4){
+			padding: 20px 0;
+		}
+		&__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 31.66%);
+			}
+		}
+	}
+
+	&-footer {
+		padding: 35px 0;
+		background-color: #33444c;
+	}
+}
+
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+//Подключение стилей модулей
+@import "../modules/modules.scss"

@@ -1,0 +1,62 @@
+.feedback-card {
+
+    // .feedback-card__header
+
+    &__header {
+        display: flex;
+        margin: 0px 0px 18px 0px;
+    }
+
+    // .feedback-card__photo
+
+    &__photo {
+        width: 55px;
+        margin: 0px 13px 0px 0px;
+        img {
+            border-radius: 50%;
+            overflow: hidden;
+            max-width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    // .feedback-card__info
+
+    &__info {
+    }
+
+    // .feedback-card__name
+
+    &__name {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #33444C;
+        margin: 0px 0px 8px 0px;
+    }
+
+    // .feedback-card__descr
+
+    &__descr {
+        display: block;
+        font-size: 14px;
+        line-height: 17px;
+        color: #33444C;
+    }
+
+    // .feedback-card__footer
+
+    &__footer {
+    }
+
+    // .feedback-card__text
+
+    &__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #343434;
+    }
+}

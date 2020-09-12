@@ -1,0 +1,123 @@
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.icon-arrow-small {
+    width: 15px;
+    height: 15px;
+}
+
+.arrow-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 356px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $x-color-orange;
+    padding: 18px 40px;
+    border-radius: 3px;
+    transition: .3s;
+    @media (max-width:$maxwidth3){
+        font-size: 14px;
+        padding: 10px;
+    }
+    &--primary {
+        color: #33444C;
+        background-color: #FFB13D;
+        &:hover{
+            background: darken($color: #FFB13D, $amount: 20%);
+        }
+    }
+    &--secondary {
+        border: 1px solid #FFB13D;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-color: #FFB13D;
+            border-radius: 20px;
+            transition: .3s;
+        }
+        &:hover{
+            color: $white;
+            &:after {
+                border-radius: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.m-icon {
+    height: 80px;
+    width: 5px;
+    background: url('../img/icons/long-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-group {
+    position: relative;
+    .text-help {
+        position: absolute;
+        color: #ff0000;
+        padding: 0px 0px 0px 10px;
+        bottom: -18px;
+        font-size: 12px;
+    }
+    &__label {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        pointer-events: none;
+        transition: .3s;
+
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__input {
+        padding: 20px 0 10px 10px;
+
+        &:focus + label {
+            top: -10px;
+            transform: scale(0.8);
+        }
+        &:valid + label {
+            top: -10px;
+            transform: scale(0.8);
+        }
+    }
+}
+
+.input-field {
+    width: 370px;
+    @media (max-width:$maxwidth3){
+        width: 100%;
+    }
+    border-bottom: 1px solid #33444C;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #33444C;
+    transition: .3s;
+    &:focus {
+        border-bottom: 2px solid #33444C;
+    }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        @@include('./modules/header/header.html')
+        <div class="fullscreen">
+            <div class="fullscreen__bg ibg"><img src="img/backgrounds/bg-1.jpg" alt="Фоновое изображение" /></div>
+            <div class="fullscreen__line-square fullscreen__line-square--left"></div>
+            <div class="fullscreen__line-square fullscreen__line-square--right"></div>
+            <a href="#content" class="fullscreen__scroll js-smoothscroll-btn">scroll</a>
+            <div class="container">
+                <div class="fullscreen__body">
+                    <div class="fullscreen__title js-animate-down">Алмазная резка в день обращения</div>
+                    <div class="fullscreen__subtile js-animate-down">1 из 4 бригад выедет в течение 1 часа. Гарантия 1 год</div>
+                    <div class="fullscreen__text js-animate-down">Оставьте заявку на расчёт стоимости </div>
+                    <a href="#" class="fullscreen__button btn btn--secondary js-animate-down">Рассчитать стоимость</a>
+                    <div class="fullscreen__advantages advantages-block">
+                        <div class="advantages-block__row advantages-block__row--top">
+                            <div class="advantages-block__col">
+                                <div class="advantages-block__title">• Минимум шума</div>
+                                <p class="advantages-block__text">Благодаря использованию дорогого немецкого оборудования Hilti, Stihl, Weka</p>
+                            </div>
+                            <div class="advantages-block__col">
+                                <div class="advantages-block__title">• Чистота</div>
+                                <p class="advantages-block__text">Делаем уборку с применением промышленного пылесоса Hilti. При сверлении отверстий в помещениях с отделкой, используем водосборное кольцо с пылесосом</p>
+                            </div>
+
+                            <div class="advantages-block__col">
+                                <div class="advantages-block__title">• Гарантия по договору</div>
+                                <p class="advantages-block__text">Если в течение 1 года выявятся дефекты: трещины,
+                                    сдвиг конструкций, порча отделки, залив, — исправим и возместим ущерб</p>
+                            </div>
+                        </div>
+                        <div class="advantages-block__row advantages-block__row--bot">
+                            <div class="advantages-block__title">
+                                • Стоимость от 5000 р. в пределах МКАД, от 5500 р. в Московской области
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <div class="s-usage">
+                <div class="container">
+                    <div class="usage">
+                        <div class="usage__title">
+                            <div class="title-section">
+                                <div class="title-section__title">Области применения</div>
+                            </div>
+                        </div>
+                        <div class="usage__examples examples-usage">
+                            <div class="examples-usage__row">
+                                <div class="examples-usage__col examples-usage__col--big">
+                                    <div class="usage-card">
+                                        <div class="usage-card__photo">
+                                            <img src="img/workers/1.jpg" alt="Фото строителя" />
+                                        </div>
+                                        <span class="usage-card__text">Создание и расширение дверных и оконных проемов</span>
+                                    </div>
+                                </div>
+                                <div class="examples-usage__col examples-usage__col--small">
+                                    <div class="usage-card">
+                                        <div class="usage-card__photo">
+                                            <img src="img/workers/2.jpg" alt="Фото строителя" />
+                                        </div>
+                                        <span class="usage-card__text usage-card__text--small">Технологические отверстия и штробы для монтажа коммуникаций</span>
+                                    </div>
+                                    <div class="usage-card">
+                                        <div class="usage-card__photo">
+                                            <img src="img/workers/3.jpg" alt="Фото строителя" />
+                                        </div>
+                                        <span class="usage-card__text usage-card__text--small">Технологические отверстия и штробы для монтажа коммуникаций</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="usage__button btn btn--primary">Рассчитать стоимость</a>
+                    </div>
+                </div>
+            </div>
+            <div class="s-feedback">
+                <div class="container">
+                    <div class="feedback">
+                        <div class="feedback__title">
+                            <div class="title-section">
+                                <div class="title-section__title">Отзывы</div>
+                            </div>
+                        </div>
+                        <div class="feedback__feedbacks">
+                            <div class="feedback-card">
+                                <div class="feedback-card__header">
+                                    <div class="feedback-card__photo">
+                                        <img src="img/feedback/1.png" alt="Фотография пользователя" />
+                                    </div>
+                                    <div class="feedback-card__info">
+                                        <span class="feedback-card__name">Дмитрий К.</span>
+                                        <span class="feedback-card__descr">Заказчик</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-card__footer">
+                                    <p class="feedback-card__text">
+                                        Воспользовались услугами для резки дверного проема в квартире. Хочу заметить, что отправлял запросы в несколько организаций для расчета и здесь оказалась самая низкая цена.Но не смотря на это, качество отличное.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-card__header">
+                                    <div class="feedback-card__photo">
+                                        <img src="img/feedback/1.png" alt="Фотография пользователя" />
+                                    </div>
+                                    <div class="feedback-card__info">
+                                        <span class="feedback-card__name">Дмитрий К.</span>
+                                        <span class="feedback-card__descr">Заказчик</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-card__footer">
+                                    <p class="feedback-card__text">
+                                        Воспользовались услугами для резки дверного проема в квартире. Хочу заметить, что отправлял запросы в несколько организаций для расчета и здесь оказалась самая низкая цена.Но не смотря на это, качество отличное.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="feedback-card">
+                                <div class="feedback-card__header">
+                                    <div class="feedback-card__photo">
+                                        <img src="img/feedback/1.png" alt="Фотография пользователя" />
+                                    </div>
+                                    <div class="feedback-card__info">
+                                        <span class="feedback-card__name">Дмитрий К.</span>
+                                        <span class="feedback-card__descr">Заказчик</span>
+                                    </div>
+                                </div>
+                                <div class="feedback-card__footer">
+                                    <p class="feedback-card__text">
+                                        Воспользовались услугами для резки дверного проема в квартире. Хочу заметить, что отправлял запросы в несколько организаций для расчета и здесь оказалась самая низкая цена.Но не смотря на это, качество отличное.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="feedback__show-more">
+                            <span>Больше отзывов</span>
+                        </a>
+                        <a href="#" class="feedback__button btn btn--secondary">Оставить отзыв</a>
+                    </div>
+                </div>
+            </div>
+            <div class="s-sertificates">
+                <div class="s-sertificates__bg ibg">
+                    <img src="img/backgrounds/bg-3.png" alt="Фото стены" />
+                </div>
+                <div class="container">
+                    <div class="sertificates">
+                        <div class="sertificates__title">
+                            <div class="title-section">
+                                <div class="title-section__title">Разрешительная документация</div>
+                            </div>
+                        </div>
+                        <div class="sertificates__slider slider-sertificates">
+                            <div class="slider-sertificates__container">
+                                <div class="slider-sertificates__wrapper swiper-wrapper">
+                                    <div class="slider-sertificates__slide swiper-slide">
+                                        <img src="img/sertificate.png" alt="Фото сертификата" />
+                                    </div>
+                                    <div class="slider-sertificates__slide swiper-slide">
+                                        <img src="img/sertificate.png" alt="Фото сертификата" />
+                                    </div>
+                                    <div class="slider-sertificates__slide swiper-slide">
+                                        <img src="img/sertificate.png" alt="Фото сертификата" />
+                                    </div>
+                                    <div class="slider-sertificates__slide swiper-slide">
+                                        <img src="img/sertificate.png" alt="Фото сертификата" />
+                                    </div>
+                                    <div class="slider-sertificates__slide swiper-slide">
+                                        <img src="img/sertificate.png" alt="Фото сертификата" />
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="slider-sertificates__arrow slider-sertificates__arrow--prev">
+                                @@include('./mixins/svg-icon.html', {"name":"arrow-left", "mod":"arrow-icon"})
+                            </span>
+                            <span class="slider-sertificates__arrow slider-sertificates__arrow--next">
+                                @@include('./mixins/svg-icon.html', {"name":"arrow-right", "mod":"arrow-icon"})
+                            </span>
+                        </div>
+                        <div class="sertificate__footer">
+                            <a href="#" class="sertificates__button btn btn--primary">Рассчитать стоимость</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-costs">
+                <div class="s-costs__bg ibg">
+                    <img src="img/backgrounds/bg-2.jpg" alt="Фото рабочего" />
+                </div>
+                <div class="container">
+                    <div class="costs">
+                        <div class="costs__titile">
+                            <div class="title-section">
+                                <div class="title-section__title">Стоимость услуг</div>
+                            </div>
+                        </div>
+                        <div class="costs__note">
+                            <p>
+                                Стоимость приезда мастеров и работы — в радиусе МКАД, — составляет от <span>5 000</span> рублей, по области (25 километров от МКАД) — <span>от 5 500</span> рублей.
+                            </p>
+                            <p>
+                                Окончательная стоимость работы зависит от ряда параметров, поэтому для расчёта ответьте на несколько вопросов
+                            </p>
+                        </div>
+                        <a href="" class="costs__button btn btn--primary">Рассчитать стоимость</a>
+                        <div class="costs__info info-costs">
+                            <span class="info-costs__title">Мелочей в работе не бывает!</span>
+                            <p class="info-costs__text">В любой работе бывают форс-мажоры. Алмазная резка не исключение. Перечислим сложные ситуации, которые могут неожиданно возникнуть, и из которых мы с Вами легко выйдем.</p>
+                            <ul class="info-costs__list">
+                                <li>• При отсутствии электричества мы предоставим бензогенератор, выдающий напряжение 220 или 380 Вольт. Цена — 2 500 рублей за 1 полный день.</li>
+                                <li>• Если подача воды для охлаждения оборудования и сбора пыли невозможна, мы доставим к месту работу до 150 литров жидкости. Цена — 1 200 рублей.</li>
+                            </ul>
+                            <p class="info-costs__text">Существуют нестандартные моменты в работе, от которых зависит стоимость работ.</p>
+                            <span class="info-costs__sub-title">Повышающие коэффициенты:</span>
+                            <ul class="info-costs__list">
+                                <li>• бурение отверстия в железобетоне под углом 45 градусов — 1,2К;</li>
+                                <li>• сверление на высоте более 4 м — 1,2К;</li>
+                                <li>• нестандартное армирование («26» арматура и более) — 1,2К.</li>
+                            </ul>
+                        </div>
+                        <form action="" class="form">
+                            <div class="costs__form form-costs">
+                                <span class="form-costs__title">Остались вопросы?</span>
+                                <span class="form-costs__sub-title">Укажите телефон и мы перезвоним чтобы ответить</span>
+                                <div class="form-costs__inputs">
+                                    <div class="form-group">
+                                        <input 
+                                            required 
+                                            data-pristine-required-message="Это поле обязательно"
+                                            class="form-group__input input-field" type="text">
+                                        <label class="form-group__label" for="">Как вас зовут?</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input 
+                                            required 
+                                            data-pristine-required-message="Это поле обязательно"
+                                            class="form-group__input input-field js-mask-phone" type="text">
+                                        <label class="form-group__label" for="">Ваш номер телефона</label>
+                                    </div>
+                                </div>
+                                <button class="form-costs__button btn btn--primary">Перезвоните мне</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="s-our-contacts">
+                <div class="s-our-contacts__bg ibg">
+                    <img src="img/backgrounds/bg-3.png" alt="Фото стены" />
+                </div>
+                <div class="container">
+                    <div class="our-contacts">
+                        <div class="our-contacts__title">
+                            <div class="title-section">
+                                <div class="title-section__title">Наши контакты</div>
+                            </div>
+                        </div>
+                        <div class="our-contacts__body">
+                            <div class="our-contacts__col info-our-contacts">
+                                <div class="info-our-contacts__body">
+                                    <div class="info-our-contacts__title">Компания ООО «Алмаз Дистрой»</div>
+                                    <div class="info-our-contacts__block">
+                                        <div class="info-our-contacts__col info-our-contacts__col--name">
+                                            <span class="info-our-contacts__name">Адрес: </span>
+                                        </div>
+                                        <div class="info-our-contacts__col">
+                                            <span class="info-our-contacts__text">г. Москва, </span>
+                                            <span class="info-our-contacts__text">ул Садовая 25с1к3, офис 243</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-our-contacts__block">
+                                        <div class="info-our-contacts__col info-our-contacts__col--name">
+                                            <span class="info-our-contacts__name">Телефоны: </span>
+                                        </div>
+                                        <div class="info-our-contacts__col">
+                                            <a href="tel:+7 (916) 611-44-94" class="info-our-contacts__text">+7 (499) 394-66-78</a>
+                                            <a href="tel:+7 (916) 611-44-94" class="info-our-contacts__text">+7 (916) 611-44-94</a>
+                                        </div>
+                                    </div>
+                                    <div class="info-our-contacts__block">
+                                        <div class="info-our-contacts__col info-our-contacts__col--name">
+                                            <span class="info-our-contacts__name">Электронная почта:</span>
+                                        </div>
+                                        <div class="info-our-contacts__col">
+                                            <a href="mailto: info@filstroy.ru" class="info-our-contacts__text">info@filstroy.ru</a>
+                                        </div>
+                                    </div>
+                                    <div class="info-our-contacts__block">
+                                        <div class="info-our-contacts__col info-our-contacts__col--name">
+                                            <span class="info-our-contacts__name">Режим работы:</span>
+                                        </div>
+                                        <div class="info-our-contacts__col">
+                                            <span class="info-our-contacts__text">с 9 утра до 10 вечера,</span>
+                                            <span class="info-our-contacts__text">без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-contacts__col map-our-contacts">
+                                <div class="map-our-contacts__wrapper">
+                                    <div id="map" class="map-our-contacts__map"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./template/scripts.html')
+</body>
+</html>
